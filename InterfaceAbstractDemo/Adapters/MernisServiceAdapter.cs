@@ -12,7 +12,7 @@ namespace InterfaceAbstractDemo.Adapters
         public bool CheckIfReelPerson(Customer customer)
         {
             KPSPublicSoapClient client = new KPSPublicSoapClient();
-            return client.TCKimlikNoDogrula(Convert.ToInt64(customer.NationalityId), customer.FirstName.ToUpper(), 
+            return client.KPSPublicSoapClient.TCKimlikNoDogrula(Convert.ToInt64(customer.NationalityId), customer.FirstName.ToUpper(), 
                 customer.LastName.ToUpper(), customer.DateOfBirth.Year);
         }
     }
